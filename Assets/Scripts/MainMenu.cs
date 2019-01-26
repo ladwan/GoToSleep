@@ -12,8 +12,13 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         HowTO.SetActive(false);
+        Invoke("HideFade", 1);
     }
 
+    public void HideFade()
+    {
+        GameObject.FindGameObjectWithTag("Fade").SetActive(false);
+    }
     public void PlayGame()
     {
         SceneManager.LoadScene(1);

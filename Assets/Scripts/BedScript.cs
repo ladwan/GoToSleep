@@ -35,11 +35,11 @@ public class BedScript : MonoBehaviour
     {
         switch (stage)
         {
-            case 0:
+            case 1:
                 stageComplete = true;
                 break;
 
-            case 1:
+            case 2:
                 if(ObjectsInteracted >= 3)
                 {
                     stageComplete = true;

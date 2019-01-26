@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class QoLScript : MonoBehaviour
 {
@@ -12,6 +13,6 @@ public class QoLScript : MonoBehaviour
 
 public void QoLMenu()
     {
-        Debug.Log("Stuff");
+        SceneManager.LoadScene(3);
     }
 }

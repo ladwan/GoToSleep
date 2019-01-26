@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene2.unity
     guid: f83117e789921814da8e7fbcaa8f9700
+  - enabled: 1
+    path: Assets/Scenes/QoLScene.unity
+    guid: 7825ba550c489e54daf33a7708ba0b7f
   m_configObjects: {}

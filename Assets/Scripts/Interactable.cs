@@ -35,6 +35,13 @@ public class Interactable : MonoBehaviour {
         Debug.Log("1");
         if (other.tag == "Player" && HasBeenClicked == true)
         {
+            switch (gameObject.name)
+            {
+                case "Tv":
+                    GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckTv1();
+                    break;
+
+            }
             Debug.Log("2");
             Object1.enabled = true;
         }
