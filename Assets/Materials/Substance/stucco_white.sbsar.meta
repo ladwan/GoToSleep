@@ -3,13 +3,20 @@ guid: cc9217651300f3a47a9784d336053886
 ScriptedImporter:
   fileIDToRecycleName:
     2100000: 'Stucco White '
+    2100002: Stucco White _1
     2800000: Stucco White  - baseColor
     2800002: Stucco White  - normal
     2800004: Stucco White  - metallic
     2800006: Stucco White  - ambientOcclusion
     2800008: Stucco White  - height
+    2800010: Stucco White _1 - baseColor
+    2800012: Stucco White _1 - normal
+    2800014: Stucco White _1 - metallic
+    2800016: Stucco White _1 - ambientOcclusion
+    2800018: Stucco White _1 - height
     11400000: sbsar
     11400002: graph0
+    11400004: graph1
   externalObjects: {}
   userData: 
   assetBundleName: 
@@ -109,4 +116,104 @@ ScriptedImporter:
       textureFormat: 0
       bGenerateOnLoad: 1
     material: {fileID: 2100000, guid: cc9217651300f3a47a9784d336053886, type: 3}
+    generatedTextures:
+    - {fileID: 2800006, guid: cc9217651300f3a47a9784d336053886, type: 3}
+    - {fileID: 2800000, guid: cc9217651300f3a47a9784d336053886, type: 3}
+    - {fileID: 2800008, guid: cc9217651300f3a47a9784d336053886, type: 3}
+    - {fileID: 2800004, guid: cc9217651300f3a47a9784d336053886, type: 3}
+    - {fileID: 2800002, guid: cc9217651300f3a47a9784d336053886, type: 3}
+  - graphLabel: Stucco White _1
+    prototypeName: 'Stucco White '
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://stucco_white\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"2867212\" type=\"8\" value=\"9,9\" />\n  <presetinput
+      identifier=\"stucco_density\" uid=\"68794348\" type=\"0\" value=\"1\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,ambientOcclusion,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: ambientOcclusion
+      alphaSource: ambientOcclusion
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Stucco White _1 - glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Stucco White _1 - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Stucco White _1 - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Stucco White _1 - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Stucco White _1 - specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Stucco White _1 - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Stucco White _1 - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Stucco White _1 - ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Stucco White _1 - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: ambientOcclusion
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      textureWidth: 512
+      textureHeight: 512
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100002, guid: cc9217651300f3a47a9784d336053886, type: 3}
     generatedTextures: []
