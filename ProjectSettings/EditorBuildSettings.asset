@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/QoLScene.unity
     guid: 7825ba550c489e54daf33a7708ba0b7f
+  - enabled: 1
+    path: Assets/Scenes/Room_Early_01.unity
+    guid: 26fb9ef972ddcf4449ee31e26cbd45e4
   m_configObjects: {}
