@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Interactable : MonoBehaviour {
-
+ 
     public Texture2D cursorTexture;
     public CursorMode cursorMode = CursorMode.Auto;
     public Vector2 hotSpot = Vector2.zero;
-    bool HasBeenClicked;
+    bool HasBeenClicked, PickedName, ToiletBool;
     public Text Object1;
     public GameObject InteractPawn;
     private void Start()
@@ -47,8 +47,30 @@ public class Interactable : MonoBehaviour {
                     break;
 
                 case "Taffy":
-                    GameObject.FindGameObjectWithTag("Player").GetComponent<ClickMove>().Hold = true;
-                    InteractPawn.transform.GetChild(0).gameObject.SetActive(true);
+                    if (PickedName == false)
+                    {
+                        PickedName = true;
+                        GameObject.FindGameObjectWithTag("Player").GetComponent<ClickMove>().Hold = true;
+                        InteractPawn.transform.GetChild(0).gameObject.SetActive(true);
+                    }
+                    
+                    break;
+
+                case "Toybox":
+                    InteractPawn.GetComponent<Animator>().SetTrigger("RideTrigger");
+                    //GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckTv1();
+                    break;
+
+                case "Toilet":
+                    if (ToiletBool == false)
+                    {
+                        ToiletBool = true;
+                        gameObject.GetComponent<Animator>().SetTrigger("ToiletTrigger");
+                        InteractPawn.GetComponent<AudioSource>().Play();
+                        Invoke("ToiletDelay", 10);
+                        //GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckTv1();
+                        
+                    }
                     break;
             }
             Debug.Log("2");
@@ -57,6 +79,16 @@ public class Interactable : MonoBehaviour {
         }
     }
 
+    public void ToiletDelay()
+    {
+        ToiletBool = false;
+    }
+    public void DogNamed()
+    {
+        GameObject.FindGameObjectWithTag("Player").GetComponent<ClickMove>().Hold = false;
+        InteractPawn.transform.GetChild(0).gameObject.SetActive(false);
+        gameObject.GetComponent<Animator>().SetTrigger("DogNameTrigger");
+    }
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Player")

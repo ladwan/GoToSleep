@@ -33,7 +33,7 @@ public class BedScript : MonoBehaviour
 
     void CheckStage()
     {
-        switch (stage)
+        /*switch (stage)
         {
             case 1:
                 stageComplete = true;
@@ -45,7 +45,7 @@ public class BedScript : MonoBehaviour
                     stageComplete = true;
                 }
                 break;
-        }
+        }*/
     }
     void OnMouseExit()
     {
@@ -57,7 +57,7 @@ public class BedScript : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
       
-        if (other.tag == "Player" && HasBeenClicked == true && stageComplete)
+        if (other.tag == "Player" && HasBeenClicked == true)
         {
             Anim.SetBool("FadeOut", true);
             Invoke("OpenScene", 2);
