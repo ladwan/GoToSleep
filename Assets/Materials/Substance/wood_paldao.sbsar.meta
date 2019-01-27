@@ -24,7 +24,8 @@ ScriptedImporter:
     generateMipMaps: 1
     preset: " <sbspreset pkgurl=\"pkg://wood_paldao\" label=\"\" >\n  <presetinput
       identifier=\"$outputsize\" uid=\"1875185945\" type=\"8\" value=\"10,10\" />\n
-      </sbspreset>\n"
+      \ <presetinput identifier=\"wood_color\" uid=\"354417905\" type=\"2\" value=\"0.448,0.301115,0.17259\"
+      />\n </sbspreset>\n"
     shaderName: Standard
     outputNames: baseColor,normal,metallic,ambientOcclusion,height
     texturePackingList:
