@@ -800,7 +800,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.4000244, y: 7.5}
+  m_AnchoredPosition: {x: -6.4000244, y: -40}
   m_SizeDelta: {x: 165.49, y: 47.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &226405425
@@ -1740,14 +1740,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stage1: 0
-  stage1MAX: 6
+  stage2: 0
+  stage3: 0
+  stage4: 0
   stage1Interacts: 0
   Puppy1: 0
   Tv1: 0
   Toybox1: 0
   Toilet1: 0
-  Lamp1: 0
+  Drawings1: 0
   Sink1: 0
+  DogBed: 0
+  GameWon: 0
+  SavedDogName: 
+  Skate2: 0
+  Tv2: 0
+  Guitar2: 0
+  Tissues2: 0
+  Puppy2: 0
+  Tv3: 0
+  Chair3: 0
+  Mirror3: 0
+  Puppy3: 0
+  Window3: 0
 --- !u!4 &1127156251
 Transform:
   m_ObjectHideFlags: 0

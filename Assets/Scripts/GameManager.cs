@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public int stage1, stage2, stage3, stage4;
     public int stage1Interacts;
-    public bool Puppy1, Tv1, Toybox1, Toilet1, Drawings1, Sink1, DogBed;
+    public bool Puppy1, Tv1, Toybox1, Toilet1, Drawings1, Sink1, DogBed, GameWon;
     public string SavedDogName;
     public bool Skate2, Tv2, Guitar2, Tissues2, Puppy2;
     public bool Tv3, Chair3, Mirror3, Puppy3, Window3;
@@ -19,7 +19,13 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-
+        if (GameWon == true)
+        {
+            if(GameObject.Find("LockedButton") != null)
+            {
+                GameObject.Find("LockedButton").SetActive(false);
+            }
+        }
     }
 
 
