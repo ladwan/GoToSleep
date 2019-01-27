@@ -5,9 +5,11 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
-    public int stage1, stage1MAX = 5;
+    public int stage1, stage1MAX = 5, stage2;
     public int stage1Interacts;
     public bool Puppy1, Tv1, Toybox1, Toilet1, Drawings1, Sink1;
+
+    public bool Skate2, Tv2, Guitar2, Tissues2, Puppy2;
 
     // Start is called before the first frame update
     private void Awake()
@@ -55,8 +57,36 @@ public void CheckPuppy1()
 
 
 
-// Update is called once per frame
-void Update()
+
+    public void CheckSkate2()
+    {
+        Skate2 = true;
+        stage2++;
+    }
+    public void CheckTv2()
+    {
+        Tv2 = true;
+        stage2++;
+    }
+    public void CheckTissue2()
+    {
+        Tissues2 = true;
+        stage2++;
+    }
+    public void CheckDog2()
+    {
+        Puppy2 = true;
+        stage2++;
+    }
+    public void CheckGuitar2()
+    {
+        Guitar2 = true;
+        stage2++;
+    }
+
+
+    // Update is called once per frame
+    void Update()
     {
         
     }

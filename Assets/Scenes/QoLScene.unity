@@ -1767,6 +1767,7 @@ GameObject:
   - component: {fileID: 1352191530}
   - component: {fileID: 1352191529}
   - component: {fileID: 1352191528}
+  - component: {fileID: 1352191531}
   m_Layer: 5
   m_Name: Stage2
   m_TagString: Untagged
@@ -1874,6 +1875,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352191526}
   m_CullTransparentMesh: 0
+--- !u!114 &1352191531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352191526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a4fef8e0f1ba64d998e3526dbd1acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bronze: {r: 0.4811321, g: 0.17723024, b: 0, a: 1}
+  white: {r: 1, g: 1, b: 1, a: 1}
+  GameManagerREF: {fileID: 0}
 --- !u!1 &1410381222
 GameObject:
   m_ObjectHideFlags: 0
@@ -2026,7 +2042,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 510617175}
   m_HandleRect: {fileID: 510617174}
   m_Direction: 2
-  m_Value: 0.9999998
+  m_Value: 1
   m_Size: 0.4378563
   m_NumberOfSteps: 0
   m_OnValueChanged:

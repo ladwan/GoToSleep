@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class Interactable : MonoBehaviour {
  
     public Texture2D cursorTexture;
@@ -44,28 +44,55 @@ public class Interactable : MonoBehaviour {
                 case "EarlyRoom_TubeTV":
                     GameObject.Find("Spot Light").GetComponent<Animator>().SetTrigger("BlinkTrigger");
 
-                    if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Tv1 == false)
+                    if(SceneManager.GetActiveScene().buildIndex <= 4)
                     {
-                        GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckTv1();
+                        if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Tv1 == false)
+                        {
+                            GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckTv1();
+
+                        }
+                    }
+                    if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Tv2 == false)
+                    {
+                        GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckTv2();
 
                     }
+
 
                     break;
 
                 case "Taffy":
-                    if (PickedName == false)
+                    if (SceneManager.GetActiveScene().buildIndex <= 4)
                     {
-                        PickedName = true;
-                        GameObject.FindGameObjectWithTag("Player").GetComponent<ClickMove>().Hold = true;
-                        InteractPawn.transform.GetChild(0).gameObject.SetActive(true);
-
-                        if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Puppy1 == false)
+                        if (PickedName == false)
                         {
-                            GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckPuppy1();
+                            if (InteractPawn.transform.GetChild(0) != null)
+                            {
+                                PickedName = true;
+                                GameObject.FindGameObjectWithTag("Player").GetComponent<ClickMove>().Hold = true;
+                                InteractPawn.transform.GetChild(0).gameObject.SetActive(true);
+                            }
+
+
+                            if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Puppy1 == false)
+                            {
+                                GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckPuppy1();
+
+                            }
 
                         }
-
                     }
+                    if(SceneManager.GetActiveScene().buildIndex >= 5)
+                    {
+                        InteractPawn.GetComponent<Animator>().SetTrigger("Dog2Trigger");
+                        if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Puppy2 == false)
+                        {
+                            GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckDog2();
+
+                        }
+                    }
+
+                   
                     
                     break;
 
@@ -103,6 +130,34 @@ public class Interactable : MonoBehaviour {
 
                     }
                     break;
+
+                case "Guitar":
+                    InteractPawn.GetComponent<Animator>().SetTrigger("GuitarTrigger");
+                    if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Guitar2 == false)
+                    {
+                        GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckGuitar2();
+
+                    }
+                    break;
+
+                case "SkateBoard":
+                    InteractPawn.GetComponent<Animator>().SetTrigger("SkateTrigger");
+                    if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Skate2 == false)
+                    {
+                        GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckSkate2();
+
+                    }
+                    break;
+
+                case "Tissues":
+                    //InteractPawn.GetComponent<Animator>().SetTrigger("SkateTrigger");
+                    if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Tissues2 == false)
+                    {
+                        GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckTissue2();
+
+                    }
+                    break;
+
             }
        
             if (Object1 != null)
