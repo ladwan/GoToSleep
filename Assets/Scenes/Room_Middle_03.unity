@@ -4309,12 +4309,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17fa9f882b9372e4781fae91534dd370, type: 3}
---- !u!95 &438105268 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3961242885346817306, guid: 17fa9f882b9372e4781fae91534dd370,
-    type: 3}
-  m_PrefabInstance: {fileID: 438105267}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &452716780
 GameObject:
   m_ObjectHideFlags: 0
@@ -8131,6 +8125,85 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 45, y: 45, z: 0}
+--- !u!1 &885244802
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 885244803}
+  - component: {fileID: 885244805}
+  - component: {fileID: 885244804}
+  m_Layer: 5
+  m_Name: DogBedText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &885244803
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885244802}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1812596814}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 160, y: 21.1}
+  m_SizeDelta: {x: 193.73, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &885244804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885244802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: ..I think you would've liked her.
+--- !u!222 &885244805
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885244802}
+  m_CullTransparentMesh: 0
 --- !u!1 &953677480
 GameObject:
   m_ObjectHideFlags: 0
@@ -8801,7 +8874,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 996518987}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e38544192900fe4aa886323c606bcd6, type: 3}
   m_Name: 
@@ -12026,41 +12099,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 66ca03d0c57e21345af6142a2bbde9d3, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb03ba439045af543ac20586c48fbfea, type: 3}
---- !u!1 &1447018088 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: fb03ba439045af543ac20586c48fbfea,
-    type: 3}
-  m_PrefabInstance: {fileID: 1447018087}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1447018089
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1447018088}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.1, y: 1.19, z: 2.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1447018090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1447018088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: faa5135b3af21a34eb8ff4785cf5b038, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 2800000, guid: 436a2d7239189bc4cb19089d0d70affa, type: 3}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
-  Anim: {fileID: 438105268}
 --- !u!1001 &1459132639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12673,7 +12711,7 @@ MonoBehaviour:
   cursorTexture: {fileID: 2800000, guid: 436a2d7239189bc4cb19089d0d70affa, type: 3}
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
-  Object1: {fileID: 0}
+  Object1: {fileID: 885244804}
   InteractPawn: {fileID: 1491858774}
   Dogthing: {fileID: 0}
 --- !u!65 &1491452011
@@ -14716,7 +14754,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 96.59998, y: 111.000015}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 256.24, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1749263672
 MonoBehaviour:
@@ -14745,13 +14783,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: See you soon.
 --- !u!222 &1749263673
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15454,6 +15492,7 @@ RectTransform:
   - {fileID: 2143792878}
   - {fileID: 1749263671}
   - {fileID: 1491858775}
+  - {fileID: 885244803}
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18301,13 +18340,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Wow, had a blast.
 --- !u!222 &2143792880
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ public class Interactable : MonoBehaviour {
     public Vector2 hotSpot = Vector2.zero;
     bool HasBeenClicked, PickedName, ToiletBool,DogName, doOnce;
     public Text Object1;
-    public GameObject InteractPawn;
+    public GameObject InteractPawn, Dogthing;
     private void Start()
     {
         if(Object1 != null)
@@ -235,6 +235,7 @@ public class Interactable : MonoBehaviour {
                         if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().DogBed == false)
                         {
                             InteractPawn.transform.GetChild(0).gameObject.SetActive(true);
+                            Dogthing = InteractPawn.transform.GetChild(0).gameObject;
                             GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckDogBed4();
 
                         }
@@ -250,7 +251,7 @@ public class Interactable : MonoBehaviour {
                 Object1.enabled = true;
             if(SceneManager.GetActiveScene().buildIndex == 7)
             {
-                Object1.enabled = false;
+                //Object1.enabled = false;
             }
             if (DogName == true)
             {
@@ -282,7 +283,11 @@ public class Interactable : MonoBehaviour {
         {
             if (SceneManager.GetActiveScene().buildIndex == 7)
             {
-                InteractPawn.transform.GetChild(0).gameObject.SetActive(false);
+                if (Dogthing != null)
+                {
+                    Dogthing.SetActive(false);
+
+                }
             }
 
             if (Object1 != null)
