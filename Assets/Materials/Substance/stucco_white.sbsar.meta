@@ -1,0 +1,112 @@
+fileFormatVersion: 2
+guid: cc9217651300f3a47a9784d336053886
+ScriptedImporter:
+  fileIDToRecycleName:
+    2100000: 'Stucco White '
+    2800000: Stucco White  - baseColor
+    2800002: Stucco White  - normal
+    2800004: Stucco White  - metallic
+    2800006: Stucco White  - ambientOcclusion
+    2800008: Stucco White  - height
+    11400000: sbsar
+    11400002: graph0
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 17
+  mGraphInstanceData:
+  - graphLabel: 'Stucco White '
+    prototypeName: 'Stucco White '
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://stucco_white\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,ambientOcclusion,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: ambientOcclusion
+      alphaSource: ambientOcclusion
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Stucco White  - glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Stucco White  - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Stucco White  - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Stucco White  - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Stucco White  - specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Stucco White  - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Stucco White  - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Stucco White  - ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Stucco White  - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: ambientOcclusion
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100000, guid: cc9217651300f3a47a9784d336053886, type: 3}
+    generatedTextures: []
