@@ -34,7 +34,7 @@ public class Interactable : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("1");
+     
         if (other.tag == "Player" && HasBeenClicked == true)
         {
             
@@ -43,7 +43,13 @@ public class Interactable : MonoBehaviour {
             {
                 case "EarlyRoom_TubeTV":
                     GameObject.Find("Spot Light").GetComponent<Animator>().SetTrigger("BlinkTrigger");
-                    //GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckTv1();
+
+                    if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Tv1 == false)
+                    {
+                        GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckTv1();
+
+                    }
+
                     break;
 
                 case "Taffy":
@@ -52,14 +58,26 @@ public class Interactable : MonoBehaviour {
                         PickedName = true;
                         GameObject.FindGameObjectWithTag("Player").GetComponent<ClickMove>().Hold = true;
                         InteractPawn.transform.GetChild(0).gameObject.SetActive(true);
+
+                        if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Puppy1 == false)
+                        {
+                            GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckPuppy1();
+
+                        }
+
                     }
                     
                     break;
 
                 case "Toybox":
                     InteractPawn.GetComponent<Animator>().SetTrigger("RideTrigger");
-                    //GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckTv1();
+                    if(GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Toybox1 == false)
+                    {
+                        GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckToybox1();
+
+                    }
                     break;
+
 
                 case "Toilet":
                     if (ToiletBool == false)
@@ -68,12 +86,25 @@ public class Interactable : MonoBehaviour {
                         gameObject.GetComponent<Animator>().SetTrigger("ToiletTrigger");
                         InteractPawn.GetComponent<AudioSource>().Play();
                         Invoke("ToiletDelay", 10);
-                        //GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckTv1();
-                        
+
+                        if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Toilet1 == false)
+                        {
+                            GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckToilet1();
+
+                        }
+
+                    }
+                    break;
+
+                case "Drawings":
+                    if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Drawings1 == false)
+                    {
+                        GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckDrawings1();
+
                     }
                     break;
             }
-            Debug.Log("2");
+       
             if (Object1 != null)
                 Object1.enabled = true;
         }

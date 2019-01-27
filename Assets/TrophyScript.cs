@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class TrophyScript : MonoBehaviour
 {
     public Color bronze, white;
@@ -18,17 +18,18 @@ public class TrophyScript : MonoBehaviour
             case "Stage1":
                 stage1REF = GameManagerREF.GetComponent<GameManager>().stage1;
                 stage1MAXREF = GameManagerREF.GetComponent<GameManager>().stage1MAX;
+                Debug.Log(stage1REF);
                 if (stage1REF >= 1)
                 {
                     GameObject.Find("Lvl1").transform.GetChild(0).GetComponent<Image>().color = bronze;
                 }
 
-                if (stage1REF >= 4)
+                if (stage1REF >= 3)
                 {
                     GameObject.Find("Lvl1").transform.GetChild(1).GetComponent<Image>().color = white;
                 }
 
-                if (stage1REF >= 6)
+                if (stage1REF >= 5)
                 {
                     GameObject.Find("Lvl1").transform.GetChild(2).GetComponent<Image>().color = white;
                 }
@@ -40,6 +41,10 @@ public class TrophyScript : MonoBehaviour
 
     }
 
+    public void GoBack()
+    {
+        SceneManager.LoadScene(0);
+    }
     // Update is called once per frame
     void Update()
     {

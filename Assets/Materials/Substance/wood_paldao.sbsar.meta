@@ -3,13 +3,27 @@ guid: 42b013267974cd345b817c44757c893a
 ScriptedImporter:
   fileIDToRecycleName:
     2100000: Paldao Wood
+    2100002: Paldao Wood_1
+    2100004: Paldao Wood_Worn
     2800000: Paldao Wood - baseColor
     2800002: Paldao Wood - normal
     2800004: Paldao Wood - metallic
     2800006: Paldao Wood - ambientOcclusion
     2800008: Paldao Wood - height
+    2800010: Paldao Wood_1 - baseColor
+    2800012: Paldao Wood_1 - normal
+    2800014: Paldao Wood_1 - metallic
+    2800016: Paldao Wood_1 - ambientOcclusion
+    2800018: Paldao Wood_1 - height
+    2800020: Paldao Wood_Worn - baseColor
+    2800022: Paldao Wood_Worn - normal
+    2800024: Paldao Wood_Worn - metallic
+    2800026: Paldao Wood_Worn - ambientOcclusion
+    2800028: Paldao Wood_Worn - height
     11400000: sbsar
     11400002: graph0
+    11400004: graph1
+    11400006: graph2
   externalObjects: {}
   userData: 
   assetBundleName: 
@@ -112,4 +126,248 @@ ScriptedImporter:
       textureFormat: 0
       bGenerateOnLoad: 1
     material: {fileID: 2100000, guid: 42b013267974cd345b817c44757c893a, type: 3}
+    generatedTextures:
+    - {fileID: 2800006, guid: 42b013267974cd345b817c44757c893a, type: 3}
+    - {fileID: 2800000, guid: 42b013267974cd345b817c44757c893a, type: 3}
+    - {fileID: 2800008, guid: 42b013267974cd345b817c44757c893a, type: 3}
+    - {fileID: 2800004, guid: 42b013267974cd345b817c44757c893a, type: 3}
+    - {fileID: 2800002, guid: 42b013267974cd345b817c44757c893a, type: 3}
+  - graphLabel: Paldao Wood_Worn
+    prototypeName: Paldao Wood
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://wood_paldao\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"1875185945\" type=\"8\" value=\"10,10\" />\n
+      \ <presetinput identifier=\"normal_intensity\" uid=\"1788368835\" type=\"0\"
+      value=\"0.255\" />\n  <presetinput identifier=\"age\" uid=\"352677531\" type=\"0\"
+      value=\"0.277\" />\n  <presetinput identifier=\"scratches\" uid=\"352677529\"
+      type=\"0\" value=\"0.409\" />\n  <presetinput identifier=\"wood_color\" uid=\"354417905\"
+      type=\"2\" value=\"0.447059,0.319928,0.206541\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,ambientOcclusion,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: ambientOcclusion
+      alphaSource: ambientOcclusion
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Paldao Wood_1 - glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_1 - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_1 - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_1 - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_1 - specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_1 - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_1 - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_1 - ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_1 - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_Worn - glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_Worn - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_Worn - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_Worn - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_Worn - specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_Worn - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_Worn - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_Worn - ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_Worn - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: ambientOcclusion
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      textureWidth: 1024
+      textureHeight: 1024
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100004, guid: 42b013267974cd345b817c44757c893a, type: 3}
+    generatedTextures:
+    - {fileID: 2800026, guid: 42b013267974cd345b817c44757c893a, type: 3}
+    - {fileID: 2800020, guid: 42b013267974cd345b817c44757c893a, type: 3}
+    - {fileID: 2800028, guid: 42b013267974cd345b817c44757c893a, type: 3}
+    - {fileID: 2800024, guid: 42b013267974cd345b817c44757c893a, type: 3}
+    - {fileID: 2800022, guid: 42b013267974cd345b817c44757c893a, type: 3}
+  - graphLabel: Paldao Wood_1
+    prototypeName: Paldao Wood
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://wood_paldao\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"1875185945\" type=\"8\" value=\"10,10\" />\n
+      \ <presetinput identifier=\"normal_intensity\" uid=\"1788368835\" type=\"0\"
+      value=\"0.255\" />\n  <presetinput identifier=\"age\" uid=\"352677531\" type=\"0\"
+      value=\"0.277\" />\n  <presetinput identifier=\"scratches\" uid=\"352677529\"
+      type=\"0\" value=\"0.409\" />\n  <presetinput identifier=\"wood_color\" uid=\"354417905\"
+      type=\"2\" value=\"0.447059,0.319928,0.206541\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,ambientOcclusion,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: ambientOcclusion
+      alphaSource: ambientOcclusion
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Paldao Wood_1 - glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_1 - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_1 - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_1 - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_1 - specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_1 - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_1 - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_1 - ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Paldao Wood_1 - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: ambientOcclusion
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      textureWidth: 1024
+      textureHeight: 1024
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100002, guid: 42b013267974cd345b817c44757c893a, type: 3}
     generatedTextures: []
