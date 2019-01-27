@@ -126,12 +126,7 @@ ScriptedImporter:
       textureFormat: 0
       bGenerateOnLoad: 1
     material: {fileID: 2100000, guid: 42b013267974cd345b817c44757c893a, type: 3}
-    generatedTextures:
-    - {fileID: 2800006, guid: 42b013267974cd345b817c44757c893a, type: 3}
-    - {fileID: 2800000, guid: 42b013267974cd345b817c44757c893a, type: 3}
-    - {fileID: 2800008, guid: 42b013267974cd345b817c44757c893a, type: 3}
-    - {fileID: 2800004, guid: 42b013267974cd345b817c44757c893a, type: 3}
-    - {fileID: 2800002, guid: 42b013267974cd345b817c44757c893a, type: 3}
+    generatedTextures: []
   - graphLabel: Paldao Wood_Worn
     prototypeName: Paldao Wood
     graphDescIndex: 0
@@ -266,12 +261,7 @@ ScriptedImporter:
       textureFormat: 0
       bGenerateOnLoad: 1
     material: {fileID: 2100004, guid: 42b013267974cd345b817c44757c893a, type: 3}
-    generatedTextures:
-    - {fileID: 2800026, guid: 42b013267974cd345b817c44757c893a, type: 3}
-    - {fileID: 2800020, guid: 42b013267974cd345b817c44757c893a, type: 3}
-    - {fileID: 2800028, guid: 42b013267974cd345b817c44757c893a, type: 3}
-    - {fileID: 2800024, guid: 42b013267974cd345b817c44757c893a, type: 3}
-    - {fileID: 2800022, guid: 42b013267974cd345b817c44757c893a, type: 3}
+    generatedTextures: []
   - graphLabel: Paldao Wood_1
     prototypeName: Paldao Wood
     graphDescIndex: 0

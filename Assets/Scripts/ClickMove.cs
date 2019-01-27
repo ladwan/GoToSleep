@@ -51,7 +51,11 @@ public class ClickMove : MonoBehaviour
                     Invoke("Delay", 1);
                     noClick1 = true;
                     doOnce = true;
-                    GameObject.FindGameObjectWithTag("Player").transform.LookAt(hit.point);
+                    if(Hold == false)
+                    {
+                        GameObject.FindGameObjectWithTag("Player").transform.LookAt(hit.point);
+
+                    }
 
                 }
                 if(Hold == false)

@@ -23,7 +23,8 @@ ScriptedImporter:
     generateAllOutputs: 0
     generateMipMaps: 1
     preset: " <sbspreset pkgurl=\"pkg://synthetic_technical_twill_multi_yarn\" label=\"\"
-      >\n </sbspreset>\n"
+      >\n  <presetinput identifier=\"$outputsize\" uid=\"1498190944\" type=\"8\" value=\"9,9\"
+      />\n </sbspreset>\n"
     shaderName: Standard
     outputNames: baseColor,normal,metallic,height,ambientOcclusion
     texturePackingList:
@@ -121,9 +122,9 @@ ScriptedImporter:
     targetSettingList:
     - label: 
       bLockRatio: 1
-      textureWidth: 256
-      textureHeight: 256
+      textureWidth: 512
+      textureHeight: 512
       textureFormat: 0
       bGenerateOnLoad: 1
-    material: {instanceID: 0}
+    material: {fileID: 2100000, guid: 1231836c1b52c394d9d98a7e81cad157, type: 3}
     generatedTextures: []

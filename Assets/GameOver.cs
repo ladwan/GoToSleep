@@ -12,8 +12,9 @@ public class GameOver : MonoBehaviour
     }
     public void Stuff()
     {
-        SceneManager.LoadScene(0);
         GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().GameWon = true;
+
+        SceneManager.LoadScene(0);
     }
     // Update is called once per frame
     void Update()

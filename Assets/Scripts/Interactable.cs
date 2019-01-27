@@ -13,7 +13,9 @@ public class Interactable : MonoBehaviour {
     public GameObject InteractPawn, Dogthing;
     private void Start()
     {
-        if(Object1 != null)
+        PickedName = false;
+
+        if (Object1 != null)
         Object1.enabled = false;
     }
 
@@ -61,7 +63,7 @@ public class Interactable : MonoBehaviour {
 
                     break;
 
-                case "Taffy":
+                case "taffyUpdated":
                     if (SceneManager.GetActiveScene().buildIndex <= 4)
                     {
                         if (PickedName == false)
@@ -92,10 +94,18 @@ public class Interactable : MonoBehaviour {
 
                         }
                     }
+                    if(SceneManager.GetActiveScene().buildIndex >= 6)
+                    {
+                        DogName = true;
+                        if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Puppy3 == false)
+                        {
+                            GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckDog3();
 
-                   
-                    
+                        }
+                    }
+         
                     break;
+
 
                 case "Toybox":
                     InteractPawn.GetComponent<Animator>().SetTrigger("RideTrigger");

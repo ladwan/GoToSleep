@@ -130,6 +130,12 @@ public void CheckPuppy1()
     // Update is called once per frame
     void Update()
     {
-        
+        if (GameWon == true)
+        {
+            if (GameObject.Find("LockedButton") != null)
+            {
+                GameObject.Find("LockedButton").SetActive(false);
+            }
+        }
     }
 }
