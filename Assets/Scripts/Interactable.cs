@@ -166,9 +166,9 @@ public class Interactable : MonoBehaviour {
                 case "FlatScreenTV":
                     //InteractPawn.GetComponent<Animator>().SetTrigger("SkateTrigger");
                     InteractPawn.SetActive(true);
-                    if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Tissues2 == false)
+                    if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Tv3 == false)
                     {
-                        GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckTissue2();
+                        GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckTv3();
 
                     }
                     break;

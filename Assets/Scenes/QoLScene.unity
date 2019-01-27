@@ -927,7 +927,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &704902426
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1039,7 +1039,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 3ef06eb40e9dc96469fd1573a2668acd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 367a0290bcb289d4f954aad644760786, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1485,6 +1485,7 @@ GameObject:
   - component: {fileID: 1306425178}
   - component: {fileID: 1306425177}
   - component: {fileID: 1306425176}
+  - component: {fileID: 1306425179}
   m_Layer: 5
   m_Name: Stage3
   m_TagString: Untagged
@@ -1575,7 +1576,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 3ef06eb40e9dc96469fd1573a2668acd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0be6ad8581c161941b40e65e4b7a6e1a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1592,6 +1593,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1306425174}
   m_CullTransparentMesh: 0
+--- !u!114 &1306425179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306425174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a4fef8e0f1ba64d998e3526dbd1acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bronze: {r: 0.509434, g: 0.20254712, b: 0, a: 1}
+  white: {r: 1, g: 1, b: 1, a: 1}
+  GameManagerREF: {fileID: 0}
 --- !u!1 &1315032421
 GameObject:
   m_ObjectHideFlags: 0
@@ -1858,7 +1874,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 3ef06eb40e9dc96469fd1573a2668acd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ad8d68462d84d4c419f90aaa7da2f1f4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2481,7 +2497,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00000095348327, y: 0.000036136476}
+  m_AnchoredPosition: {x: 0.00000095348327, y: 0}
   m_SizeDelta: {x: 0, y: 613.9}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &2006679930
@@ -2725,7 +2741,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &2057839699
 CanvasRenderer:
   m_ObjectHideFlags: 0
