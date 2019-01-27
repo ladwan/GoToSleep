@@ -7,10 +7,11 @@ public class ClickMove : MonoBehaviour
 {
 
     NavMeshAgent NavREF;
-
+ 
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1f;
         NavREF = GetComponent<NavMeshAgent>();
     }
 
@@ -20,13 +21,17 @@ public class ClickMove : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
         RaycastHit hit;
-
+       
         if (Input.GetMouseButton(0))
         {
             if (Physics.Raycast(ray, out hit, 100))
             {
-                NavREF.destination = hit.point;
+            
+                NavREF.destination = hit.point; 
+
+
             }
         }
+  
     }
 }
