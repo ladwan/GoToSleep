@@ -165,12 +165,17 @@ public class Interactable : MonoBehaviour {
 
                 case "FlatScreenTV":
                     //InteractPawn.GetComponent<Animator>().SetTrigger("SkateTrigger");
-                    InteractPawn.SetActive(true);
-                    if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Tv3 == false)
+                  
+                    if(SceneManager.GetActiveScene().buildIndex == 6)
                     {
-                        GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckTv3();
+                        InteractPawn.SetActive(true);
+                        if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Tv3 == false)
+                        {
+                            GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckTv3();
 
+                        }
                     }
+
                     break;
 
                 case "taffyUnwrapped":
@@ -184,34 +189,69 @@ public class Interactable : MonoBehaviour {
                     break;
 
                 case "Chair":
-                    InteractPawn.GetComponent<Animator>().SetTrigger("ChairTrigger");
-                    if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Chair3 == false)
+                    if (SceneManager.GetActiveScene().buildIndex == 6)
                     {
-                        GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckChair3();
+                        InteractPawn.GetComponent<Animator>().SetTrigger("ChairTrigger");
+                        if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Chair3 == false)
+                        {
+                            GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckChair3();
 
+                        }
                     }
+                    
                     break;
                     
                 case "Mirror":
-                    if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Mirror3 == false)
+                    if(SceneManager.GetActiveScene().buildIndex == 6)
                     {
-                        GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckMirror3();
+                        if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Mirror3 == false)
+                        {
+                            GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckMirror3();
 
+                        }
                     }
+
                     break;
 
                 case "WindowBoi":
-                    if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Window3 == false)
+                    if(SceneManager.GetActiveScene().buildIndex == 6)
                     {
-                        GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckWindow3();
+                        if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Window3 == false)
+                        {
+                            GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckWindow3();
 
+                        }
                     }
+
                     break;
 
+
+
+
+                case "DogBed":
+                    if (SceneManager.GetActiveScene().buildIndex == 7)
+                    {
+
+                        if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().DogBed == false)
+                        {
+                            InteractPawn.transform.GetChild(0).gameObject.SetActive(true);
+                            GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckDogBed4();
+
+                        }
+                            
+                          
+                        
+                    }
+
+                    break;
             }
        
             if (Object1 != null)
                 Object1.enabled = true;
+            if(SceneManager.GetActiveScene().buildIndex == 7)
+            {
+                Object1.enabled = false;
+            }
             if (DogName == true)
             {
                 if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().SavedDogName != null && doOnce == false)
@@ -240,7 +280,12 @@ public class Interactable : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            if(Object1 != null)
+            if (SceneManager.GetActiveScene().buildIndex == 7)
+            {
+                InteractPawn.transform.GetChild(0).gameObject.SetActive(false);
+            }
+
+            if (Object1 != null)
             Object1.enabled = false;
             DogName = false;
         }
