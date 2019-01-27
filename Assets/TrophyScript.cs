@@ -7,7 +7,7 @@ public class TrophyScript : MonoBehaviour
 {
     public Color bronze, white;
     public GameObject GameManagerREF;
-    int stage1REF, stage1MAXREF, stage2REF;
+    int stage1REF, stage2REF;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +17,7 @@ public class TrophyScript : MonoBehaviour
         {
             case "Stage1":
                 stage1REF = GameManagerREF.GetComponent<GameManager>().stage1;
-                stage1MAXREF = GameManagerREF.GetComponent<GameManager>().stage1MAX;
+               
                 Debug.Log(stage1REF);
                 if (stage1REF >= 1)
                 {

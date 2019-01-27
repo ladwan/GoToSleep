@@ -8,7 +8,7 @@ public class Interactable : MonoBehaviour {
     public Texture2D cursorTexture;
     public CursorMode cursorMode = CursorMode.Auto;
     public Vector2 hotSpot = Vector2.zero;
-    bool HasBeenClicked, PickedName, ToiletBool;
+    bool HasBeenClicked, PickedName, ToiletBool,DogName, doOnce;
     public Text Object1;
     public GameObject InteractPawn;
     private void Start()
@@ -69,6 +69,7 @@ public class Interactable : MonoBehaviour {
                             if (InteractPawn.transform.GetChild(0) != null)
                             {
                                 PickedName = true;
+
                                 GameObject.FindGameObjectWithTag("Player").GetComponent<ClickMove>().Hold = true;
                                 InteractPawn.transform.GetChild(0).gameObject.SetActive(true);
                             }
@@ -158,10 +159,69 @@ public class Interactable : MonoBehaviour {
                     }
                     break;
 
+
+
+
+
+                case "FlatScreenTV":
+                    //InteractPawn.GetComponent<Animator>().SetTrigger("SkateTrigger");
+                    InteractPawn.SetActive(true);
+                    if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Tissues2 == false)
+                    {
+                        GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckTissue2();
+
+                    }
+                    break;
+
+                case "taffyUnwrapped":
+
+                    DogName = true;
+                    if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Puppy3 == false)
+                    {
+                        GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckDog3();
+
+                    }
+                    break;
+
+                case "Chair":
+                    InteractPawn.GetComponent<Animator>().SetTrigger("ChairTrigger");
+                    if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Chair3 == false)
+                    {
+                        GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckChair3();
+
+                    }
+                    break;
+                    
+                case "Mirror":
+                    if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Mirror3 == false)
+                    {
+                        GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckMirror3();
+
+                    }
+                    break;
+
+                case "WindowBoi":
+                    if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().Window3 == false)
+                    {
+                        GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckWindow3();
+
+                    }
+                    break;
+
             }
        
             if (Object1 != null)
                 Object1.enabled = true;
+            if (DogName == true)
+            {
+                if (GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().SavedDogName != null && doOnce == false)
+                {
+                    doOnce = true;
+                    Object1.text += GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().SavedDogName += "?";
+                }
+
+               
+            }
         }
     }
 
@@ -171,6 +231,7 @@ public class Interactable : MonoBehaviour {
     }
     public void DogNamed()
     {
+        GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().SavedDogName = InteractPawn.transform.GetChild(0).transform.GetChild(1).GetComponent<InputField>().text;
         GameObject.FindGameObjectWithTag("Player").GetComponent<ClickMove>().Hold = false;
         InteractPawn.transform.GetChild(0).gameObject.SetActive(false);
         gameObject.GetComponent<Animator>().SetTrigger("DogNameTrigger");
@@ -181,6 +242,7 @@ public class Interactable : MonoBehaviour {
         {
             if(Object1 != null)
             Object1.enabled = false;
+            DogName = false;
         }
     }
     void OnMouseExit()

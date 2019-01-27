@@ -1,17 +1,14 @@
 fileFormatVersion: 2
-guid: ae33d962db816304c83f1b7ee24d5c2c
+guid: 1699508708a732147aa62de0bbb1a834
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
     2100000: No Name
-    2100002: 01 - Default
-    2100004: 'Material #15'
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Bedroom
-    6400000: //RootNode
+    4300000: Box005
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -45,14 +42,14 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

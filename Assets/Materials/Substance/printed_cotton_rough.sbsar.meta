@@ -3,13 +3,20 @@ guid: f7f090811b8753f47997d0ef1d467746
 ScriptedImporter:
   fileIDToRecycleName:
     2100000: Printed Cotton Rough
+    2100002: Printed Cotton Rough_1
     2800000: Printed Cotton Rough - baseColor
     2800002: Printed Cotton Rough - normal
     2800004: Printed Cotton Rough - metallic
     2800006: Printed Cotton Rough - height
     2800008: Printed Cotton Rough - ambientOcclusion
+    2800010: Printed Cotton Rough_1 - baseColor
+    2800012: Printed Cotton Rough_1 - normal
+    2800014: Printed Cotton Rough_1 - metallic
+    2800016: Printed Cotton Rough_1 - height
+    2800018: Printed Cotton Rough_1 - ambientOcclusion
     11400000: sbsar
     11400002: graph0
+    11400004: graph1
   externalObjects: {}
   userData: 
   assetBundleName: 
@@ -139,4 +146,143 @@ ScriptedImporter:
       textureFormat: 0
       bGenerateOnLoad: 1
     material: {fileID: 2100000, guid: f7f090811b8753f47997d0ef1d467746, type: 3}
+    generatedTextures:
+    - {fileID: 2800008, guid: f7f090811b8753f47997d0ef1d467746, type: 3}
+    - {fileID: 2800000, guid: f7f090811b8753f47997d0ef1d467746, type: 3}
+    - {fileID: 2800006, guid: f7f090811b8753f47997d0ef1d467746, type: 3}
+    - {fileID: 2800004, guid: f7f090811b8753f47997d0ef1d467746, type: 3}
+    - {fileID: 2800002, guid: f7f090811b8753f47997d0ef1d467746, type: 3}
+  - graphLabel: Printed Cotton Rough_1
+    prototypeName: Printed Cotton Rough
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://printed_cotton_rough\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"4211780015\" type=\"8\" value=\"9,9\" />\n
+      \ <presetinput identifier=\"color\" uid=\"2380414053\" type=\"2\" value=\"0.334742,0.51,0.22134\"
+      />\n  <presetinput identifier=\"variation_hue\" uid=\"2375706870\" type=\"0\"
+      value=\"89\" />\n  <presetinput identifier=\"variation_chroma\" uid=\"2375706816\"
+      type=\"0\" value=\"0.57\" />\n  <presetinput identifier=\"pattern_selection\"
+      uid=\"2369487519\" type=\"4\" value=\"15\" />\n  <presetinput identifier=\"pattern_tile\"
+      uid=\"2369398581\" type=\"4\" value=\"7\" />\n  <presetinput identifier=\"pattern_rotation\"
+      uid=\"2369407803\" type=\"0\" value=\"0.57\" />\n  <presetinput identifier=\"pattern_blur\"
+      uid=\"2369419950\" type=\"0\" value=\"0.21\" />\n  <presetinput identifier=\"pattern_color_1\"
+      uid=\"2369416057\" type=\"2\" value=\"0.180392,0.509804,0.261747\" />\n  <presetinput
+      identifier=\"color_1_variation_luma\" uid=\"2369423750\" type=\"0\" value=\"0.12\"
+      />\n  <presetinput identifier=\"pattern_color_2\" uid=\"2369435915\" type=\"2\"
+      value=\"0.675385,0.964706,0.192157\" />\n  <presetinput identifier=\"color_2_variation_luma\"
+      uid=\"2369074456\" type=\"0\" value=\"0.2\" />\n  <presetinput identifier=\"pattern_color_3\"
+      uid=\"2369071338\" type=\"2\" value=\"0.0387807,0.517647,0.0196079\" />\n  <presetinput
+      identifier=\"pattern_color_4\" uid=\"2369091395\" type=\"2\" value=\"0,0.666667,0.65812\"
+      />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,height,ambientOcclusion
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: opacity
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: specularLevel
+      alphaSource: specularLevel
+    - outputName: height
+      alphaSource: height
+    - outputName: ambientOcclusion
+      alphaSource: ambientOcclusion
+    - outputName: opacity
+      alphaSource: opacity
+    - outputName: mask
+      alphaSource: mask
+    textureParameters:
+    - textureName: Printed Cotton Rough_1 - glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Printed Cotton Rough_1 - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Printed Cotton Rough_1 - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Printed Cotton Rough_1 - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Printed Cotton Rough_1 - specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Printed Cotton Rough_1 - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Printed Cotton Rough_1 - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Printed Cotton Rough_1 - specularLevel
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Printed Cotton Rough_1 - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Printed Cotton Rough_1 - ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Printed Cotton Rough_1 - opacity
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Printed Cotton Rough_1 - mask
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: specularLevel
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    - outputName: ambientOcclusion
+      bLinear: 1
+    - outputName: opacity
+      bLinear: 1
+    - outputName: mask
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      textureWidth: 512
+      textureHeight: 512
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100002, guid: f7f090811b8753f47997d0ef1d467746, type: 3}
     generatedTextures: []
