@@ -7742,8 +7742,27 @@ MonoBehaviour:
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
   Object1: {fileID: 318127282}
-  InteractPawn: {fileID: 0}
+  InteractPawn: {fileID: 804280783}
   Dogthing: {fileID: 0}
+--- !u!95 &804280786
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804280783}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 561a652eb5cbbca48809facbb65656cd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &816089561
 PrefabInstance:
   m_ObjectHideFlags: 0
