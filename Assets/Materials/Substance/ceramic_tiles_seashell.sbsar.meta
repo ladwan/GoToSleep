@@ -3,12 +3,18 @@ guid: dfb00d0206b796e46bd092de7a6c61b9
 ScriptedImporter:
   fileIDToRecycleName:
     2100000: 'Seashell Tiles '
+    2100002: Seashell Tiles _1
     2800000: Seashell Tiles  - baseColor
     2800002: Seashell Tiles  - normal
     2800004: Seashell Tiles  - metallic
     2800006: Seashell Tiles  - height
+    2800008: Seashell Tiles _1 - baseColor
+    2800010: Seashell Tiles _1 - normal
+    2800012: Seashell Tiles _1 - metallic
+    2800014: Seashell Tiles _1 - height
     11400000: sbsar
     11400002: graph0
+    11400004: graph1
   externalObjects: {}
   userData: 
   assetBundleName: 
@@ -108,3 +114,93 @@ ScriptedImporter:
     - {fileID: 2800006, guid: dfb00d0206b796e46bd092de7a6c61b9, type: 3}
     - {fileID: 2800004, guid: dfb00d0206b796e46bd092de7a6c61b9, type: 3}
     - {fileID: 2800002, guid: dfb00d0206b796e46bd092de7a6c61b9, type: 3}
+  - graphLabel: Seashell Tiles _1
+    prototypeName: 'Seashell Tiles '
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg:///ceramic_tiles_seashell\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"1280034865\" type=\"8\" value=\"10,10\" />\n
+      \ <presetinput identifier=\"pattern_selection\" uid=\"1038100211\" type=\"4\"
+      value=\"1\" />\n  <presetinput identifier=\"diamond_tiling\" uid=\"1023467754\"
+      type=\"4\" value=\"12\" />\n  <presetinput identifier=\"diamond_spacing\" uid=\"1023468315\"
+      type=\"0\" value=\"0.03\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Seashell Tiles _1 - glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Seashell Tiles _1 - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Seashell Tiles _1 - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Seashell Tiles _1 - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Seashell Tiles _1 - specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Seashell Tiles _1 - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Seashell Tiles _1 - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Seashell Tiles _1 - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      textureWidth: 1024
+      textureHeight: 1024
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100002, guid: dfb00d0206b796e46bd092de7a6c61b9, type: 3}
+    generatedTextures: []
