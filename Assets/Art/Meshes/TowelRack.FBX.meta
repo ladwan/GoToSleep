@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b409fb1c4d110fd4d81c2fbf3615af3a
+guid: 69d717bf33df5434c8a197c1567d7e46
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -8,8 +8,7 @@ ModelImporter:
     2100000: No Name
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Dresser
-    6400000: //RootNode
+    4300000: TowelRack
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -43,14 +42,14 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
