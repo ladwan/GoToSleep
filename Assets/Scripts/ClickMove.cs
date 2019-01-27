@@ -5,7 +5,8 @@ using UnityEngine.AI;
 
 public class ClickMove : MonoBehaviour
 {
-
+    public bool Hold;
+    bool doOnce,noClick, noClick1 ;
     NavMeshAgent NavREF;
  
     // Start is called before the first frame update
@@ -15,9 +16,28 @@ public class ClickMove : MonoBehaviour
         NavREF = GetComponent<NavMeshAgent>();
     }
 
+    private void OnMouseOver()
+    {
+        noClick = true;
+    }
+    private void OnMouseExit()
+    {
+        noClick = false;
+    }
+
+    public void Delay()
+    {
+        noClick1 = false;
+    }
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetMouseButtonUp(0))
+        {
+            
+            doOnce = false;
+        }
+      
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
         RaycastHit hit;
@@ -26,8 +46,19 @@ public class ClickMove : MonoBehaviour
         {
             if (Physics.Raycast(ray, out hit, 100))
             {
-            
-                NavREF.destination = hit.point; 
+                if (doOnce == false && noClick == false && noClick1 == false)
+                {
+                    Invoke("Delay", 1);
+                    noClick1 = true;
+                    doOnce = true;
+                    GameObject.FindGameObjectWithTag("Player").transform.LookAt(hit.point);
+
+                }
+                if(Hold == false)
+                {
+                    NavREF.destination = hit.point;
+
+                }
 
 
             }

@@ -10,9 +10,10 @@ public class Interactable : MonoBehaviour {
     public Vector2 hotSpot = Vector2.zero;
     bool HasBeenClicked;
     public Text Object1;
-
+    public GameObject InteractPawn;
     private void Start()
     {
+        if(Object1 != null)
         Object1.enabled = false;
     }
 
@@ -20,6 +21,7 @@ public class Interactable : MonoBehaviour {
     {
         if (Input.GetMouseButton(0))
         {
+            
             HasBeenClicked = true;
             StartCoroutine(ClickDelay());
         }
@@ -35,15 +37,23 @@ public class Interactable : MonoBehaviour {
         Debug.Log("1");
         if (other.tag == "Player" && HasBeenClicked == true)
         {
+            
+
             switch (gameObject.name)
             {
-                case "Tv":
-                    GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckTv1();
+                case "EarlyRoom_TubeTV":
+                    GameObject.Find("Spot Light").GetComponent<Animator>().SetTrigger("BlinkTrigger");
+                    //GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().CheckTv1();
                     break;
 
+                case "Taffy":
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<ClickMove>().Hold = true;
+                    InteractPawn.transform.GetChild(0).gameObject.SetActive(true);
+                    break;
             }
             Debug.Log("2");
-            Object1.enabled = true;
+            if (Object1 != null)
+                Object1.enabled = true;
         }
     }
 
@@ -51,6 +61,7 @@ public class Interactable : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
+            if(Object1 != null)
             Object1.enabled = false;
         }
     }
