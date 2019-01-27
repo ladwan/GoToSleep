@@ -116,12 +116,7 @@ ScriptedImporter:
       textureFormat: 0
       bGenerateOnLoad: 1
     material: {fileID: 2100000, guid: cc9217651300f3a47a9784d336053886, type: 3}
-    generatedTextures:
-    - {fileID: 2800006, guid: cc9217651300f3a47a9784d336053886, type: 3}
-    - {fileID: 2800000, guid: cc9217651300f3a47a9784d336053886, type: 3}
-    - {fileID: 2800008, guid: cc9217651300f3a47a9784d336053886, type: 3}
-    - {fileID: 2800004, guid: cc9217651300f3a47a9784d336053886, type: 3}
-    - {fileID: 2800002, guid: cc9217651300f3a47a9784d336053886, type: 3}
+    generatedTextures: []
   - graphLabel: Stucco White _1
     prototypeName: 'Stucco White '
     graphDescIndex: 0
